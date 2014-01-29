@@ -10,14 +10,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="cleartype" content="on">
 
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
-        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="h5bp/img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="h5bp/img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="h5bp/img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="h5bp/img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="h5bp/img/touch/apple-touch-icon.png">
 
         <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileImage" content="h5bp/img/touch/apple-touch-icon-144x144-precomposed.png">
         <meta name="msapplication-TileColor" content="#222222">
 
 
@@ -33,27 +33,45 @@
         <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
         -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="h5bp/css/normalize.css">
+        <link rel="stylesheet" href="h5bp/css/main.css">
+        <link rel="stylesheet" href="css/doublep79.css">
+        <script src="h5bp/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 
         <!-- Add your site or application content here -->
-        
-        <h1>Homework #1</h1>		
-		<h2>My First HTML5 App in the Cloud!</h2>
-        
-        <video width="320" height="180" controls> 			
-  			<source src="res/big-buck-bunny_trailer.webm" type="video/webm">
-  			<source src="res/big-buck-bunny_trailer.ogg" type="video/ogg">
-  			<source src="res/big-buck-bunny_trailer.mp4" type="video/mp4">
-  			<track src="res/comments-en.vtt" label="English subtitles" srclang="en" kind="subtitles" default />
-  			Sorry, your browser does not support the video tag.	  			  				  		    
-		</video>
+        <div style="background-image: url(res/background.jpg); background-repeat: no-repeat; height: 664px; border-radius: 20px; width:440px; background-color: green; margin-top:-20px">
+			<div style="position:relative; top:170px; left:60px">
+				<h3>Homework #1</h3>		
+				<h4>My First HTML5 App in the Cloud!</h4> 
+			</div>        
+        	<div style="position:relative; top:160px; left:60px;">        	       	
+	        	<video width="320" height="180" controls> 			
+			  			<source src="res/big-buck-bunny_trailer.webm" type="video/webm">
+			  			<source src="res/big-buck-bunny_trailer.ogg" type="video/ogg">
+			  			<source src="res/big-buck-bunny_trailer.mp4" type="video/mp4">
+			  			<track src="res/comments-en.vtt" label="English subtitles" srclang="en" kind="subtitles" default />
+			  			<p>Sorry, your browser does not support the video tag.</p>	  			  				  		    
+				</video>
+	       	</div>
+        	<div style="background-color: #cccccc; position:relative; top:160px; left:60px; width:320px; border-radius: 10px">
+        		<p class="text">Thanks to <a href="http://www.bigbuckbunny.org/"></>Big Buck Bunny</a> and his friends!</p>
+        		<p class="text">The video I used in this homework is the trailer of an open source project created with the
+        		amazing <a href="http://www.blender.org/">Blender</a> software. I've converted it in webm, ogg and mp4 formats for
+        		maximum browser compatibility. Unfortunately I can't make the subtitles work...  </p>
+        		<p class="text">This movie is very nice and I often use it for my demos. Please visit the 
+        		<a href="http://www.bigbuckbunny.org/"></>Big Buck Bunny</a> website to watch the full movie!</p>        		
+        	</div>
+		</div>	
+		<div style="width:440px">		
+			<p class="license">(c) copyright 2008, Blender Foundation / www.bigbuckbunny.org </p>
+			<p class="license">Thanks to the Blender Foundation | www.blender.org</p>
+			<p class="license">The results of the Peach open movie project has been licensed under the <a href="http://creativecommons.org/licenses/by/3.0/" onclick="javascript:pageTracker._trackPageview ('/outbound/creativecommons.org');">Creative Commons Attribution 3.0</a> license.</p>
+		</div>
 						
-        <script src="js/vendor/zepto.min.js"></script>
-        <script src="js/helper.js"></script>
+        <script src="h5bp/js/vendor/zepto.min.js"></script>
+        <script src="h5bp/js/helper.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
